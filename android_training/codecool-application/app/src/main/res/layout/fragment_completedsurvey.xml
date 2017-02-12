@@ -1,0 +1,127 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <!--HEADER LAYOUT-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--TITLE-->
+        <TextView
+            android:id="@+id/fragment_completedsurvey_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:paddingBottom="10dp"
+            android:text="@string/fragment_completedsurvey_title"/>
+
+        <include layout="@layout/dashed_separator_line_decor" />
+
+    </LinearLayout>
+
+    <!--FOOTER LAYOUT-->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/dashed_separator_line_decor" />
+
+        <!--BUTTON-->
+        <TextView
+            android:id="@+id/fragment_completed_button"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ripple_accent"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/fragment_completed_button"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <!--BODY LAYOUT-->
+    <LinearLayout
+        android:id="@+id/bodyLayout"
+        android:layout_below="@id/headerLayout"
+        android:layout_above="@id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--PERCENTAGE-->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <!--BODY-->
+            <TextView
+                android:id="@+id/fragment_completedsurvey_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill"
+                android:lineSpacingMultiplier="1.3"
+                android:paddingBottom="20dp"
+                android:text="@string/fragment_completedsurvey_body"
+                android:textSize="16sp"
+                android:singleLine="false"
+                android:paddingTop="10dp" />
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your score: "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill"
+                android:lineSpacingMultiplier="1.3"
+                android:paddingBottom="10dp"
+                android:text="XX%"
+                android:textSize="16sp"
+                android:singleLine="false"
+                android:paddingTop="10dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textStyle="bold"/>
+            
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/completed"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

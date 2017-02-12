@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_survey"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="5dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/5"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_prev_question" />
+
+
+        <TextView
+            android:layout_marginRight="8dp"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:id="@+id/mandatorystar" />
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--This FrameLayout is the placeholder for the fragments-->
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:minHeight="48dp">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="8dp"
+            android:minWidth="64dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:id="@+id/survey_previous"
+            android:text="PREVIOUS"
+            android:textColor="@color/colorPrimaryDark"
+            android:theme="@style/SurveyButton" />
+
+        <Button
+            android:id="@+id/survey_nextquestion"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:minWidth="64dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+
+            android:text="NEXT QUESTION"
+            android:textColor="#1976D2"
+            android:theme="@style/SurveyButton" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/footer_line"
+        android:layout_above="@id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/separatorline_thin"/>
+
+    <FrameLayout
+        android:id="@+id/survey_placeholder"
+        android:layout_below="@id/toolbar_survey"
+        android:layout_above="@id/footer_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.codecool.codecoolapplication.view2.activity.SurveyActivity"/>
+</RelativeLayout>

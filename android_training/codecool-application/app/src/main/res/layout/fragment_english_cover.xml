@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+    <!--HEADER LAYOUT-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <!--TITLE-->
+        <TextView
+            android:id="@+id/fragment_english_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:text="@string/fragment_english_title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <include layout="@layout/dashed_separator_line_decor" />
+
+    </LinearLayout>
+
+    <!--FOOTER LAYOUT-->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/dashed_separator_line_decor" />
+
+        <!--BUTTON-->
+        <TextView
+            android:id="@+id/fragment_english_action_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ripple_accent"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/fragment_english_button"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <!--BODY LAYOUT-->
+    <LinearLayout
+        android:id="@+id/bodyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footerLayout"
+        android:layout_below="@id/headerLayout"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--BODY-->
+                <TextView
+                    android:id="@+id/fragment_english_cover_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="fill"
+                    android:lineSpacingMultiplier="1.3"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="false"
+                    android:text="@string/fragment_english_body"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dictionary"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

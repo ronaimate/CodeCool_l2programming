@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo Kata</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+            background-color: #eee;
+            text-align: left;
+        }
+
+        .list {
+            float: left;
+            width: 40%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>To-do list</h1>
+<input type="text" id="todoInput">
+<button id="addBtn">ADD</button>
+<hr/>
+<div class="list">
+    <h2>Todos</h2>
+    <ul id="todo"></ul>
+</div>
+
+<div class="list">
+    <h2>Done</h2>
+    <ul id="done"></ul>
+</div>
+
+<script>
+    (function () {
+        var input = document.getElementById('todoInput');
+        var addBtn = document.getElementById('addBtn');
+
+        var lists = {
+            todo: document.getElementById('todo'),
+            done: document.getElementById('done')
+        };
+
+        var i = 0;
+
+        var makeTodoHtml = function (todoString, onCheck) {
+            var element = document.createElement('li');
+            var checkbox = document.createElement("input");
+            checkbox.type = 'checkbox';
+            checkbox.addEventListener('click', onCheck);
+            var label = document.createElement('span');
+            element.id = i++;
+            label.textContent = "Id:" + element.id + " " + todoString;
+
+
+            element.appendChild(checkbox);
+            element.appendChild(label);
+
+
+            return element;
+        };
+
+        var onTodoCheck = function (event) {
+            var todoItem = event.target.parentElement;
+            var currentList = todoItem.parentElement.id;
+            var targetList = currentList == 'todo' ? 'done' : 'todo';
+
+            event.target.checked = false;
+            lists[targetList].appendChild(todoItem);
+        };
+
+        var addBtnClick = function (event) {
+            var todoString = input.value.trim();
+
+
+            if(todoString.length > 0){
+                lists.todo.appendChild(makeTodoHtml(todoString, onTodoCheck));
+                input.value = '';
+                input.focus();
+            }
+        };
+
+        var inputEnter = function (event) {
+            var code = event.keyCode;
+            if(code === 13)
+            {
+                addBtnClick();
+            }
+        };
+
+        addBtn.addEventListener('click', addBtnClick);
+        input.addEventListener('keyup', inputEnter);
+        input.focus();
+    })();
+</script>
+
+</body>
+</html>

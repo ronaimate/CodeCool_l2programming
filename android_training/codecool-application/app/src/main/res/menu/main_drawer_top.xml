@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/drawer_home"
+        android:title="Home" />
+
+    <item android:title="Take Our Tests">
+        <menu>
+            <item
+                android:id="@+id/nav_acceptance"
+                android:icon="@drawable/drawer_questionmark"
+                android:title="Acceptance Criteria" />
+            <item
+                android:id="@+id/nav_english"
+                android:icon="@drawable/drawer_questionmark"
+                android:title="English Test" />
+            <item
+                android:id="@+id/nav_logic"
+                android:icon="@drawable/drawer_questionmark"
+                android:title="Logic Test" />
+        </menu>
+    </item>
+
+    <item android:title="Introduce Yourself">
+        <menu>
+            <item
+                android:id="@+id/nav_introduction"
+                android:icon="@drawable/drawer_face"
+                android:title="Create an Introduction" />
+        </menu>
+    </item>
+
+    <item android:title="Developer Commentary">
+        <menu>
+            <item
+                android:id="@+id/nav_devs"
+                android:icon="@drawable/drawer_smileyface"
+                android:title="Who made this app?" />
+        </menu>
+    </item>
+
+    <item android:title="Exit App">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/drawer_exit"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+
+
+</menu>

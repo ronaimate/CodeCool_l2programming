@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--TITLE LAYOUT-->
+    <LinearLayout
+        android:id="@+id/fragment_introductionlocalvideofile_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/fragment_introductionlocalvideofile_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:singleLine="true"
+            android:text="@string/fragment_introductionlocalvideofile_title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:paddingBottom="10dp" />
+
+
+    </LinearLayout>
+
+    <!--GREY LINE VIEW-->
+    <View
+        android:id="@+id/grey_line_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/fragment_introductionlocalvideofile_title_layout"
+        android:background="@android:color/darker_gray" />
+
+    <!--BODY LAYOUT-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grey_line_view_top"
+        android:layout_above="@+id/fragment_introductionlocalvideofile_action_button_layout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/introductionlocalvideofile_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill"
+                android:lineSpacingMultiplier="1.3"
+                android:paddingBottom="20dp"
+                android:text="@string/fragment_introductionlocalvideofile_body"
+                android:textSize="16sp"
+                android:singleLine="false"
+                android:paddingTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/grey"
+                    android:hint="/video/localpath"
+                    android:id="@+id/editText"
+                    android:inputType="text" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_accent"
+                    android:text="Record"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+    <!--GREY LINE VIEW-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/fragment_introductionlocalvideofile_action_button_layout"
+        android:background="@android:color/darker_gray" />
+
+    <!--ACTION BUTTON LAYOUT-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fragment_introductionlocalvideofile_action_button_layout"
+        android:paddingTop="14dp">
+
+        <TextView
+            android:id="@+id/fragment_introductionlocalvideofile_action_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/ripple_accent"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/fragment_introductionlocalvideofile_button"
+            android:textColor="@android:color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

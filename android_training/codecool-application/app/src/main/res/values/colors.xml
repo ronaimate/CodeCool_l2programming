@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C1464E</color>
+    <color name="colorPrimaryDark">#A23639</color>
+    <color name="colorAccent">#658FB2</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="lightgrey">#E0E0E0</color>
+    <color name="buttonClicked">#000</color>
+    <color name="buttonClickedAccent">#5d8bb1</color>
+    <color name="nav_header">#6996ca</color>
+</resources>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<resources>-->
+<!--<color name="colorPrimary">#F44336</color>-->
+<!--<color name="colorPrimaryDark">#D32F2F</color>-->
+<!--<color name="colorAccent">#2196F3</color>-->
+<!--<color name="grey">#9E9E9E</color>-->
+<!--<color name="buttonClicked">#000</color>-->
+<!--<color name="buttonClickedAccent">#72a5d1</color>-->
+<!--<color name="nav_header">#6996ca</color>-->
+<!--</resources>-->
+

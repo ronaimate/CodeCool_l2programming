@@ -1,0 +1,127 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <!--HEADER LAYOUT-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--TITLE-->
+        <TextView
+            android:id="@+id/fragment_introduction_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:paddingBottom="10dp"
+            android:text="@string/fragment_introduction_title"/>
+
+        <include layout="@layout/dashed_separator_line_decor" />
+
+    </LinearLayout>
+
+    <!--FOOTER LAYOUT-->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/dashed_separator_line_decor" />
+
+        <!--BUTTON-->
+        <TextView
+            android:id="@+id/fragment_introduction_action_button"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/ripple_accent"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/fragment_introduction_button"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <!--BODY LAYOUT-->
+    <LinearLayout
+        android:id="@+id/bodyLayout"
+        android:layout_below="@id/headerLayout"
+        android:layout_above="@id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/introduction_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="fill"
+                    android:lineSpacingMultiplier="1.3"
+                    android:paddingBottom="20dp"
+                    android:text="@string/fragment_introduction_body"
+                    android:textSize="16sp"
+                    android:singleLine="false"
+                    android:paddingTop="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/introduction_text"
+                    android:id="@+id/introduction_radiogroup">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Let me enter a YouTube URL"
+                        android:id="@+id/radiobutton_youtubeurl"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I just want to record a video with my phone"
+                        android:id="@+id/radiobutton_rec_video"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I have already recorded a video file"
+                        android:id="@+id/radiobutton_select_local_file"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="I go with textual introduction instead"
+                        android:id="@+id/radiobutton_textual_introduction"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

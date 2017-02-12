@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Codecool Application</string>
+    <string name="title_activity_textualntroduction">TextualntroductionActivity</string>
+    <string name="login_screen_background">Login Screen Background</string>
+    <string name="title_activity_login_activity_v2">LoginActivity_v2</string>
+
+    <!--NAVIGATION DRAWER-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--FRAGMENT_HOME.XML STRINGS-->
+    <string name="fragment_home_title">Welcome, USER</string>
+    <string name="fragment_home_body">
+        Welcome to the Codecool Application! We are excited to see you here! Now that you signed up on our website there are a few
+        more steps you must do if you want to be a Codecooler.
+        \r\n\r\nFirst things first, we have rules and you must accept them before you continue.
+        \r\nWe have two tests for you. Since english is crucial when it comes to programming, we would like to know your skills on that field.
+        There\'s another test, which will give us more insight on your logical thinking. Make sure to do your best when completing, some questions might be tricky!
+        \r\n\r\nRight after you completed our Acceptance Criteria and the two tests you must prodive a bit more information about you. To do so, head over to the introduction
+        page and select what kind of introduction you prefer. Your best shot is to make a shrort video intro about yourself!
+        \r\n\r\nAfter you created your introduction you can submit your application to Codecool.
+        \r\n\r\nLooking forward to hear more from you!
+        \r\n\r\nThe Staff
+    </string>
+    <string name="fragment_home_button">OKAY, GOT IT! CONTINUE</string>
+
+    <!--ACTIVITY TEXTUAL INTRODUCTION STRINGS-->
+    <string name="textual_edittext_hint">Please write your textual introduction here. When you\'re ready just hit the submit button below.</string>
+    <string name="textual_action_button">SUBMIT YOUR INTRODUCTION</string>
+
+    <!--FRAGMENT_ACCEPTANCE_COVER.XML STRINGS-->
+    <string name="fragment_acceptance_title">Acceptance Criteria</string>
+    <string name="fragment_acceptance_body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Huic mori optimum esse propter desperationem sapientiae, illi propter spem vivere. Haec quo modo conveniant, non sane intellego. Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt. Duo Reges: constructio interrete. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam.
+    </string>
+    <string name="fragment_acceptance_button">COMPLETE OUR ACCEPTANCE CIRTERIA</string>
+
+    <!--FRAGMENT_ENGLISH_COVER.XML STRINGS-->
+    <string name="fragment_english_title">English Test</string>
+    <string name="fragment_english_body">
+        English Huic mori optimum esse propter desperationem sapientiae, illi propter spem vivere.
+        Haec quo modo conveniant, non sane intellego. Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt.
+        Duo Reges: constructio interrete. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam. Iam id ipsum absurdum, maximum malum neglegi.
+    </string>
+    <string name="fragment_english_button">TAKE THE ENGLISH TEST</string>
+
+    <!--FRAGMENT_LOGIC_COVER.XML STRINGS-->
+    <string name="fragment_logic_title">Logic Test</string>
+    <string name="fragment_logic_body">
+        Logic Quasi ego id curem, quid ille aiat aut neget. Teneo, inquit, finem illi videri nihil dolere.
+        Hoc est non dividere, sed frangere. Illa videamus, quae a te de amicitia dicta sunt. Quid de Platone aut de Democrito loquar?
+        Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Quae ista amicitia est? Ad quorum et cognitionem et usum iam corroborati natura ipsa praeeunte deducimur.
+    </string>
+    <string name="fragment_logic_button">TAKE THE LOGIC TEST</string>
+
+    <!--FRAGMENT_THANK_YOU.XML STRINGS-->
+    <string name="fragment_thankyou_title">You Are Awesome!</string>
+    <string name="fragment_thankyou_body">
+        Your application has been successfully submitted and we got everything we need from you right now. We\'ll get back to you in a few days so stay tuned: keep an eye on your inbox!
+        \r\n\r\nIn the meantime feel free to read more about the school and our fellow students: https://codecool.hu/blog
+        \r\n\r\nThe Staff
+    </string>
+
+    <!--FRAGMENT_NOTYETAVAILABLE.XML STRINGS-->
+    <string name="fragment_notyetavailable_title">This Page Is Not Yet Available</string>
+    <string name="fragment_notyetavailable_body">
+        You must complete the tests in order. First make sure to go through on our Acceptance Criteria. After that the English Test will unlock and upon successful completion you can complete the Logic Test as well. Don\'t forget to introduce yourself! Without an introduction submitting your application is not possible!
+    </string>
+
+    <!--FRAGMENT_FAILEDAPPLICATION.XML STRINGS-->
+    <string name="fragment_failedapplication_title_text">You failed the test.</string>
+    <string name="fragment_failedapplication_body">
+        You failed a test which means you cannot be a Codecooler, sorry. You should try looking into something else!
+    </string>
+
+    <!--FRAGMENT_COMPLETEDSURVEY.XML STRINGS-->
+    <string name="fragment_completedsurvey_title">This module is completed.</string>
+    <string name="fragment_completedsurvey_body">
+        There\'s no need to complete the same survey again, you have already done that. You\'re on the right track! Go ahead, complete your application, we are waiting for your submission!
+    </string>
+    <string name="fragment_completed_button">GO TO THE NEXT TEST</string>
+
+
+    <!--FRAGMENT_APPLICATION_SUBMIT.XML STRINGS-->
+    <string name="fragment_applicationsubmit_title">Almost Done!</string>
+    <string name="fragment_applicationsubmit_body">
+        Now that you completed all the tests and created your introduction profile, only one thing left: submit your application. This is the last chance to modify your introduction, so make sure you done it the way you wanted! Simply hit the button below to Submit your application to Codecool.
+    </string>
+        <string name="fragment_applicationsubmit_body_warning">
+        If you are about to upload an introduction video along with your application you just created with your camera (or a file that you selected from your storage) you should be on WiFi or a large data plan before you hit Submit.
+    </string>
+    <string name="fragment_applicationsubmit_button">SUBMIT MY APPLICATION</string>
+
+    <!--FRAGMENT_INTRODUCTION_COVER.XML STRINGS-->
+    <string name="fragment_introduction_title">Introduce Yourself</string>
+    <string name="fragment_introduction_body">
+        Now that you have completed the tests, it\'s time to tell a few words about yourself! You have a few options here. You can upload a YouTube video URL, create a video using your smartphone\'s camera or if you like the oldschool way go with a textual introduction. Make sure to be short and tell us about why you want to be a Codecooler!
+    </string>
+    <string name="fragment_introduction_button">SELECT AN OPTION FIRST</string>
+
+    <!--FRAGMENT_INTRODUCTION_YOUTUBELINK.XML STRINGS-->
+    <string name="fragment_introductionyoutubelink_title">Your Introduction on YouTube</string>
+    <string name="fragment_introductionyoutubelink_body">
+        Lorem Ipsum...
+    </string>
+    <string name="fragment_introductionyoutubelink_button">Submit URL</string>
+
+    <!--FRAGMENT_INTRODUCTION_CAMCORDER.XML STRINGS-->
+    <string name="fragment_introductioncamcorder_title">Your Camcorder Video</string>
+    <string name="fragment_introductioncamcorder_body">
+        Lorem Ipsum Record Camcorder Video...
+    </string>
+    <string name="fragment_introductioncamcorder_button">Submit Video</string>
+
+    <!--FRAGMENT_INTRODUCTION_LOCALVIDEOFILE.XML STRINGS-->
+    <string name="fragment_introductionlocalvideofile_title">Your Local Video File</string>
+    <string name="fragment_introductionlocalvideofile_body">
+        Lorem Ipsum PreRecorded Video...
+    </string>
+    <string name="fragment_introductionlocalvideofile_button">Submit Local Video</string>
+
+    <!--FRAGMENT_INTRODUCTION_TEXTUAL.XML STRINGS-->
+    <string name="fragment_introductiontextual_title">Your Textual Intro</string>
+    <string name="fragment_introductiontextual_body">
+        Lorem Ipsum Textaul Intro...
+    </string>
+    <string name="fragment_introductiontextual_button">Submit Textual Intro</string>
+
+
+</resources>

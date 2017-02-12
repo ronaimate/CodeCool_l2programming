@@ -1,0 +1,22 @@
+.todoUl {
+    list-style: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    padding: 6px;
+    background-color: antiquewhite;
+}
+
+.todoLi {
+    margin: 5px;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+.todoLi:hover{
+    background-color: aqua;
+}
+
+.todoLi.done {
+    text-decoration: line-through;
+    background-color: red;
+}

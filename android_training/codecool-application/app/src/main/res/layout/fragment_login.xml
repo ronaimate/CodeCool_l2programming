@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+        android:gravity="center">
+
+        <!--START inputFieldsLayout-->
+        <LinearLayout
+            android:id="@+id/inputFieldsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputWhenInactive"
+                app:hintTextAppearance="@style/TextInputWhenActivated"
+                android:paddingLeft="@dimen/activity_login_element_margin"
+                android:paddingRight="@dimen/activity_login_element_margin">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/white"
+                    android:hint="Email" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputWhenInactive"
+                app:hintTextAppearance="@style/TextInputWhenActivated"
+                android:paddingLeft="@dimen/activity_login_element_margin"
+                android:paddingRight="@dimen/activity_login_element_margin">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/editTextPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/white"
+                    android:hint="Password"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <!--END inputFieldsLayout-->
+
+        <!--START buttonsLayout-->
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:background="@drawable/ripple"
+                android:textSize="16sp"
+                android:layout_marginRight="@dimen/activity_login_element_margin"
+                android:layout_marginLeft="@dimen/activity_login_element_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnOpenForgotPassUI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Forgot my password"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal" />
+        <!--END buttonsLayout -->
+
+    </LinearLayout>
+
+</FrameLayout>
+
